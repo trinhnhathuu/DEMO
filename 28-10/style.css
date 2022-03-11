@@ -1,0 +1,29 @@
+*{
+  margin: 0;
+  padding: 0;
+  background-image:url(../img) no-repeat top right scroll; 
+}
+
+
+.top{
+  list-style-type: none;
+
+}
+.top li{
+  float:left;
+  line-height:40px;
+  width:120px;
+  border-left:solid 1px wheat;
+}
+.top a{
+  background-size: cover;
+  text-decoration:none;
+  color:black;
+  display:block;
+ 
+  padding:0 10px;
+}
+.top li:hover >a{
+  background-color: white;
+
+}

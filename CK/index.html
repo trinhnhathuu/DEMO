@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css ">
+    <link rel="stylesheet" href="user.css">
+    <title>Meal Finder</title>
+</head>
+
+<body>
+    <div class="menu">
+        <ul class="menu-top">
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">MENU</a>
+                <ul class="menu-list">
+                    <li><a href="#">Chicken</a>
+                        <div class="col">
+                            <ul class="menu-list1">
+                                <li><a href="#">Gà Tần</a></li>
+                                <li><a href="#">Gà Ngâm</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="#">Rice</a></li>
+                    <li><a href="#">Egg Rolls</a></li>
+                </ul>
+            </li>
+            <li><a href="#">SALES</a></li>
+            <li><a href="#">Dịch Vụ</a></li>
+            <li><a href="#">HOTTLE</a></li>
+        </ul>
+        <ul class="login">
+            <button class="con">Login</button>
+        </ul>
+        <ul class="userr">
+            <button class="con1">></button>
+        </ul>
+    </div>
+
+    <div class="container">
+        <h1>Meal Finder</h1>
+        <div calss="flex">
+            <form class="flex" id="submit">
+                <input type="text" id="search" placeholder="Search for meals or keywords">
+                <button class="search-btn" type="submit">
+                    <i class="fas fa-search"></i>
+                </button>
+            </form>
+            <button class="random-btn" id="random">
+                <i class="fas fa-random"></i>
+            </button>
+        </div>
+        <div id="result-heading"></div>
+        <div id="meals" class="meals"></div>
+        <div id="single-meal"></div>
+    </div>
+
+    <div class="login2">
+        <h2><small>Log in</small></h2>
+        <form class="con">
+            <div class="group">
+                <input type="text" required id="name">
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label>Name</label>
+            </div>
+
+            <div class="group">
+                <input type="text" required id="email">
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label>Email</label>
+            </div>
+            <div class="group">
+                <input type="text" required id="sdt">
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label>Số Điện Thoại</label>
+            </div>
+            <div class="group">
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <button id="btn">OK</button>
+            </div>
+            <p class="footer">
+                <a href="#" target="_blank">Register</a>
+            </p>
+        </form>
+    </div>
+    <div class="user-card">
+        <div class="image">
+            <img class="avtar" src="https://i.pinimg.com/564x/aa/9b/07/aa9b076d894d5d3a33317419aabe13f5.jpg" alt="">
+        </div>
+        <div class="user-details">
+            <div class="username "> </div>
+            <div class="txt "> </div>
+            <div class="about-me ">
+
+            </div>
+        </div>
+        <button class="contact"> Contact</button>
+    </div>
+    <div id="app-sidebar">
+        <ul>
+            <li id="nameuser"></li>
+            <li>Hồ Sơ</li>
+            <li>Cài Đặt</li>
+            <li>Túi</li>
+        </ul>
+        
+    </div>
+    <script src="script.js"></script>
+    <script src="user.js"></script>
+    <footer class="bot">
+        <a href="https://www.facebook.com/hii.nhat.3/" target="_blank">Facebook</a>
+        <a href="#" target="_blank">Contact us</a>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body{
+
+ 
+}
+ul {
+  list-style: none;
+}
+.list {
+  width: 1000px;
+  height: 500px;
+  margin: 50px auto 0;
+}
+.list li {
+  margin: auto;
+  float: left;
+  max-width: 650px;
+  height: 380px;
+  box-shadow: 0 0 10px orangered;
+}
+
+input {
+  opacity: 0;
+  cursor: pointer;
+  width: 100px;
+  height: 500px;
+  transition: 0.2s;
+}
+input:checked {
+  width: 700px;
+}
+.list li:nth-child(1),
+.list ul:nth-child(1) .bj {
+  background: url(../03/img/01.jpg) no-repeat center/cover;
+}
+.list li:nth-child(2),
+.list ul:nth-child(2) .bj {
+  background: url(../03/img/02.jpg) no-repeat center/cover;
+}
+.list li:nth-child(3),
+.list ul:nth-child(3) .bj {
+  background: url(../03/img/05.jpg) no-repeat center/cover;
+}
+.list li:nth-child(4),
+.list ul:nth-child(4) .bj {
+  background: url(../03/img/06.jpg) no-repeat center/cover;
+}
+.list li .bj {
+  opacity: 0;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+
+  z-index: -1;
+  filter: blur(2, 3px);
+}
+
+
+input[name="swith"]:checked  ~ .bj {
+  opacity: 60;
+} 
+/*
+.list li:nth-child(1),
+.list ul:nth-child(1) .bj {
+  -webkit-animation: slide 14s ease infinite;
+}
+.list li:nth-child(2),
+.list ul:nth-child(2) .bj {
+  -webkit-animation: slide 14s ease infinite;
+}
+.list li:nth-child(3),
+.list ul:nth-child(3) .bj {
+  -webkit-animation: slide 14s ease infinite;
+}
+.list li:nth-child(4),
+.list ul:nth-child(4) .bj {
+  -webkit-animation: slide 14s ease infinite;
+}
+
+li{
+  float: left;
+  margin: 0 auto;
+  
+}
+@-webkit-keyframes slide {
+  20% {margin-left: 0px;}
+  30% {margin-left: -50px;}
+  50% {margin-left: -50px;}
+  60% {margin-left: -160px;}
+  80% {margin-left: -160px;}
+}
+*/
